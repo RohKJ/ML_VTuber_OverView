@@ -1,0 +1,46 @@
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+
+# Claude Code
+.claude/
+
+# Raw audio (large wav files extracted from zip)
+data/raw_audio/
+data/*.zip
+
+# 데이터 폴더 전체 (원본/가공/예측결과 모두 버전관리 제외)
+data/
+
+# 대용량 데이터 (버전관리 제외 - 약 10GB)
+data/audio/
+data/snapshots/
+data/features/
+data/gemini/
+*.wav
+
+# 데이터 수집 노트북 (API 키 의존, 공개 제외)
+notebooks/00_데이터수집/
+
+# 대용량 바이너리 데이터
+*.h5
+*.parquet
+
+# 학습 산출물
+models/
+outputs/
+*.pkl
+*.joblib
+*.cbm
+
+# .env.example 은 추적하고 실제 .env 만 제외
+!.env.example
